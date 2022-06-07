@@ -14,6 +14,9 @@ Then run:
 docker compose up
 ```
 
+> **Note**: If backend service starts before the db, 
+> you may need to run 'docker compose up' again. Not enough time to add health checks.
+
 For frontend project, in root directory:
 
 1.
