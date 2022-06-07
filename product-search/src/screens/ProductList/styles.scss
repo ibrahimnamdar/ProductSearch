@@ -1,0 +1,62 @@
+@use "../../theme/base" as base;
+
+.product-list-container {
+  position: absolute;
+  display: flex;
+  width: 1158px;
+  flex-flow: wrap;
+  left: 303px;
+
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  height: auto;
+  min-width: 1440px;
+  margin: 0 auto;
+  top: -28px;
+}
+
+.product-name {
+  position: relative;
+  width: 303px;
+  left: 81px;
+  top: 24px;
+  font-family: base.$textFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+
+  color: base.$primaryTextColor;
+}
+
+.search-text {
+  position: relative;
+  width: 150px;
+  height: 15px;
+  left: 81px;
+  top: 2px;
+  font-family: base.$textFont;
+  font-weight: 400;
+  font-size: 15px;
+  color: #b0b0b0;
+}
+
+.search-result-text {
+  position: relative;
+  width: 100px;
+  height: 15px;
+  left: 3px;
+  font-family: base.$textFont;
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+}
+
+.sidebar{
+  position: relative;
+  float: left;
+  left:81px;
+}

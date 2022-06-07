@@ -1,0 +1,40 @@
+.search-input {
+  position: absolute;
+  width: 699px;
+  height: 48px;
+  left: 353.48px;
+  bottom: 24px;
+  top: 24px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M6.5%200C8.22391%200%209.87721%200.684819%2011.0962%201.90381C12.3152%203.12279%2013%204.77609%2013%206.5C13%208.11%2012.41%209.59%2011.44%2010.73L11.71%2011H12.5L17.5%2016L16%2017.5L11%2012.5V11.71L10.73%2011.44C9.59%2012.41%208.11%2013%206.5%2013C4.77609%2013%203.12279%2012.3152%201.90381%2011.0962C0.684819%209.87721%200%208.22391%200%206.5C0%204.77609%200.684819%203.12279%201.90381%201.90381C3.12279%200.684819%204.77609%200%206.5%200ZM6.5%202C4%202%202%204%202%206.5C2%209%204%2011%206.5%2011C9%2011%2011%209%2011%206.5C11%204%209%202%206.5%202Z%22%20fill%3D%22%23333333%22%2F%3E%0A%3C%2Fsvg%3E%0A")
+    left no-repeat;
+  background-position: 3.5%;
+  background-color: #eeeeee;
+
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 700;
+  color: #484848;
+
+  border-radius: 100px;
+  border: 0;
+  padding-left: 50px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+
+  display: flex;
+  align-items: center;
+
+  color: #b0b0b0;
+}

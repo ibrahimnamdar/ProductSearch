@@ -1,0 +1,20 @@
+@use '../../theme/base' as base;
+
+.cart-button {
+  position: absolute;
+  top: 24px;
+  left: 1241px;
+  box-sizing: border-box;
+  width: 120px;
+  height: 48px;
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  color: base.$secondaryTextColor;
+  background-color: white;
+
+  font-family: base.$textFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 143%;
+}

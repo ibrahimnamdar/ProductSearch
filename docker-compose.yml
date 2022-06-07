@@ -1,0 +1,40 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/product_search/data
+  
+  product-search:
+    container_name: product-search
+    build:
+      context: ./ProductSearch
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+  
+  # react-ui:
+  #   build:
+  #     context: ./product-search
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   container_name: react-ui
+  #   stdin_open: true
+  #   volumes:
+  #      - ./product-search:/usr/src/app/product-search
+  #      - /usr/src/app/product-search/node_modules
+  #   depends_on:
+  #     - product-search
+
+volumes:
+  db:
+    driver: local

@@ -1,0 +1,36 @@
+@use "../../theme/base" as base;
+
+.filter-header {
+  position: relative;
+  width: 62px;
+  height: 21px;
+  text-align: left;
+
+  font-family: base.$textFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: base.$primaryTextColor;
+}
+
+.filter-body {
+  position: relative;
+  text-align: left;
+}
+
+.filter-item {
+  position: relative;
+  margin-top: -3px;
+  font-family: base.$textFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  color: #646464;
+}
+
+.filter-item.active {
+  color: #ff6000;
+}
